@@ -8882,7 +8882,7 @@ textarea.form-control {
 .ftco-navbar-light.scrolled,
 .ftco-navbar-light.scrolled.awake,
 .ftco-navbar-light.scrolled.sleep{
-  background: #000 !important;
+  background: #D9CDC1 !important;
   box-shadow: 0 1px 14px rgba(0,0,0,.08);
   transition: background-color .55s ease, box-shadow .55s ease, padding .55s ease !important;
 }
@@ -8890,17 +8890,17 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.past-hero,
 .ftco-navbar-light.scrolled.awake.past-hero,
 .ftco-navbar-light.scrolled.sleep.past-hero{
-  background: #111 !important;
+  background: #c0b0a6 !important;
   box-shadow: 0 1px 14px rgba(0,0,0,.18);
 }
 .ftco-navbar-light .navbar-brand,
 .ftco-navbar-light .nav-link{
-  color: rgba(255,255,255,.88) !important;
+  color: #383330 !important;
   transition: color .55s ease, opacity .35s ease !important;
 }
 .ftco-navbar-light .nav-link{ opacity: .85; }
 .ftco-navbar-light .nav-link:hover,
-.ftco-navbar-light .nav-item.active .nav-link{ opacity: 1; color: #fff !important; }
+.ftco-navbar-light .nav-item.active .nav-link{ opacity: 1; color: #000 !important; }
 .ftco-navbar-light .nav-item.active .nav-link{ text-decoration: underline; text-underline-offset: 6px; }
 
 /* the template recolours the bar's type once .scrolled is on, at a higher
@@ -8928,10 +8928,10 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.awake.past-hero .nav-item.active > a,
 .ftco-navbar-light.scrolled.sleep.past-hero .navbar-brand,
 .ftco-navbar-light.scrolled.sleep.past-hero .nav-link{
-  color: rgba(255,255,255,.88) !important;
+  color: #383330 !important;
 }
 
-/* ── brand title always white (on black header) ───────────────────────── */
+/* ── brand title always black ────────────────────────────────────────── */
 .ftco-navbar-light .navbar-brand,
 .ftco-navbar-light.scrolled .navbar-brand,
 .ftco-navbar-light.scrolled.awake .navbar-brand,
@@ -8940,5 +8940,5 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.past-hero .navbar-brand,
 .ftco-navbar-light.scrolled.awake.past-hero .navbar-brand,
 .ftco-navbar-light.scrolled.sleep.past-hero .navbar-brand{
-  color: #fff !important;
+  color: #000 !important;
 }
