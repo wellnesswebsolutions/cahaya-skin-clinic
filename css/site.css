@@ -13,8 +13,11 @@
 }
 
 /* --- gap below fixed header ------------------------------------ */
+/* inner pages: first section after nav */
 #ftco-navbar + section{padding-top:11em}
 @media(max-width:767.98px){#ftco-navbar + section{padding-top:9em}}
+/* home hero: push content below the fixed nav bar */
+.hero-wrap .slider-text{padding-top:90px}
 
 /* --- navbar: brand and dropdown ------------------------------- */
 .navbar-brand{color:#000!important}
