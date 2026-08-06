@@ -1,0 +1,6 @@
+# Demo build: indexing is blocked so this preview cannot compete with the
+# clinic's live site. When this becomes the live site, delete the Disallow line.
+User-agent: *
+Disallow: /
+
+Sitemap: https://thecahayaskinclinic.co.uk/sitemap.xml

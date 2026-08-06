@@ -1,0 +1,134 @@
+/* ---------------------------------------------------------------
+   Skin, Slim & Laser Solutions — site-specific layer.
+   Everything here sits on top of the vendor bundle in style.css so
+   the template can be re-themed without touching compiled CSS.
+   --------------------------------------------------------------- */
+
+:root{
+  --sage:#a3878b;
+  --sage-dark:#7c6064;
+  --champagne:#f5ede9;
+  --taupe:#D9CDC1;
+  --ink:#383330;
+}
+
+/* --- navbar: brand and dropdown ------------------------------- */
+.navbar-brand{color:#000!important}
+.navbar-brand:hover,.navbar-brand:focus{color:#000!important}
+.navbar-brand h1{color:#000}
+@media (min-width:992px){
+  .ftco-navbar-light .navbar-nav .nav-link{color:#000!important}
+  .ftco-navbar-light .navbar-nav .nav-link:hover{color:var(--sage)!important}
+}
+#ftco-navbar .dropdown-menu{
+  border:0;border-radius:2px;padding:.5rem 0;margin-top:0;
+  background:#1c1c1c;box-shadow:0 14px 34px rgba(0,0,0,.28);min-width:266px;
+}
+#ftco-navbar .dropdown-menu .dropdown-item{
+  color:rgba(255,255,255,.82);font-size:13px;letter-spacing:.06em;
+  text-transform:uppercase;font-weight:500;padding:.62rem 1.35rem;white-space:normal;
+}
+#ftco-navbar .dropdown-menu .dropdown-item:hover,
+#ftco-navbar .dropdown-menu .dropdown-item:focus{background:var(--sage);color:#fff;}
+#ftco-navbar .nav-item.dropdown > .nav-link::after{
+  display:inline-block;margin-left:.4em;vertical-align:.15em;content:"";
+  border-top:.32em solid;border-right:.32em solid transparent;
+  border-bottom:0;border-left:.32em solid transparent;opacity:.7;
+}
+@media (min-width:992px){
+  #ftco-navbar .nav-item.dropdown:hover > .dropdown-menu{display:block;}
+}
+@media (max-width:991.98px){
+  #ftco-navbar .dropdown-menu{background:transparent;box-shadow:none;padding-left:.6rem;}
+}
+
+/* --- booking conversion kit (floating button + mobile bar) ------ */
+.rr-fab{position:fixed;right:24px;bottom:24px;z-index:1040;display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:15px 24px;border-radius:2px;box-shadow:0 12px 30px rgba(0,0,0,.28);opacity:0;transform:translateY(22px);pointer-events:none;transition:opacity .35s,transform .35s,background .3s}
+.rr-fab.show{opacity:1;transform:none;pointer-events:auto}
+.rr-fab:hover{background:var(--sage-dark);color:#fff}
+.rr-fab svg{width:17px;height:17px}
+.rr-mbar{position:fixed;left:0;right:0;bottom:0;z-index:1040;display:none;grid-template-columns:1fr 1fr;background:#1c1c1c;transform:translateY(100%);transition:transform .35s}
+.rr-mbar.show{transform:none}
+.rr-mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:#fff}
+.rr-mbar a.book{background:var(--sage)}
+.rr-mbar a svg{width:16px;height:16px}
+@media(max-width:768px){.rr-fab{display:none}.rr-mbar{display:grid}}
+
+/* --- treatment price list -------------------------------------- */
+.price-list{margin:0;padding:0;list-style:none}
+.price-item{padding:1.55em 0;border-bottom:1px solid #e8e2da}
+.price-item:first-child{border-top:1px solid #e8e2da}
+.price-item .price-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.4em}
+.price-item h3{font-size:19px;font-weight:600;margin:0;letter-spacing:.02em;color:var(--ink)}
+.price-item .price-sub{display:block;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:#9b9188;font-weight:600;margin-top:.25em}
+.price-item .price-tag{font-size:16px;font-weight:700;color:var(--sage);white-space:nowrap}
+.price-item p{margin:.85em 0 0;font-size:15.5px;line-height:1.8;color:#7c7369}
+.price-item p:last-child{margin-bottom:0}
+
+/* --- compact two-column price table (laser) --------------------- */
+.rate-card{background:#fff;border:1px solid #e8e2da;border-radius:3px;padding:2em 2.1em;height:100%}
+.rate-card h3{font-size:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink);margin-bottom:.35em}
+.rate-card .rate-note{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:1.4em;display:block}
+.rate-card ul{margin:0;padding:0;list-style:none}
+.rate-card li{display:flex;justify-content:space-between;gap:1em;padding:.55em 0;border-bottom:1px solid #f0ece6;font-size:15.5px;color:#7c7369}
+.rate-card li:last-child{border-bottom:0}
+.rate-card li strong{color:var(--ink);font-weight:600;white-space:nowrap}
+
+/* --- treatment index cards ------------------------------------- */
+.tcard{display:block;position:relative;overflow:hidden;border-radius:3px;aspect-ratio:1;background:#111}
+.tcard img{width:100%;height:100%;object-fit:cover;opacity:.62;transition:transform .9s,opacity .4s}
+.tcard:hover img{transform:scale(1.06);opacity:.45}
+.staff .img{aspect-ratio:1;background-size:cover!important;background-position:center!important}
+.tcard .tcard-body{position:absolute;inset:auto 0 0 0;padding:1.7em 1.8em;color:#fff}
+.tcard h3{color:#fff;font-size:21px;font-weight:600;margin:0 0 .3em}
+.tcard p{color:rgba(255,255,255,.85);font-size:14.5px;margin:0;line-height:1.65}
+.tcard .tcard-more{display:inline-block;margin-top:.9em;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#fff;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:2px}
+.tcard:hover .tcard-more{border-bottom-color:#fff}
+
+/* --- gallery ---------------------------------------------------- */
+.ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.ba-tile{position:relative;overflow:hidden;border-radius:3px;background:#f3efe9}
+.ba-tile img{width:100%;display:block;transition:transform .9s}
+.ba-tile:hover img{transform:scale(1.04)}
+.ba-tile figcaption{padding:1.1em 1.3em;font-size:14px;color:#7c7369;background:#fff;border:1px solid #efe9e2;border-top:0}
+
+/* --- location cards --------------------------------------------- */
+.loc-card{background:#fff;border:1px solid #e8e2da;border-radius:3px;padding:2.1em;height:100%}
+.loc-card .loc-pin{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--champagne);color:var(--sage);margin-bottom:1em}
+.loc-card h3{font-size:17px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;margin-bottom:.6em;color:var(--ink)}
+.loc-card address{font-style:normal;font-size:15.5px;line-height:1.85;color:#7c7369;margin-bottom:.9em}
+.loc-card .loc-tag{display:inline-block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--sage);background:var(--champagne);padding:.42em .9em;border-radius:2px}
+
+/* --- pull quote / notice ---------------------------------------- */
+.notice{background:var(--champagne);border-left:3px solid var(--sage);padding:1.7em 1.9em;border-radius:2px}
+.notice p{margin:0;font-size:15.5px;line-height:1.8;color:#6f665d}
+.notice p + p{margin-top:.8em}
+.notice h3{font-size:16px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:.7em;color:var(--ink)}
+
+/* --- compact title band (pages with the photo hero removed) ------ */
+.hero-wrap.hero-compact{
+  height:auto !important;min-height:0 !important;
+  background:var(--sage-dark) !important;background-image:none !important;
+}
+.hero-wrap.hero-compact .overlay{opacity:.14}
+.hero-wrap.hero-compact .js-fullheight{height:auto !important;min-height:0 !important}
+.hero-wrap.hero-compact .slider-text{padding:9.5em 0 4.5em}
+.hero-wrap.hero-compact .bread{margin-top:0 !important}
+@media(max-width:991.98px){.hero-wrap.hero-compact .slider-text{padding:7.5em 0 3.5em}}
+
+/* --- hero title colour ------------------------------------------ */
+.hero-wrap:not(.hero-compact) .slider-text h1{color:#000!important}
+
+/* --- brand mark in hero ----------------------------------------- */
+.hero-logo{max-width:210px;width:56vw;height:auto;margin:0 auto 1.6em;display:block;border-radius:3px}
+.eyebrow{display:block;font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;font-weight:600;color:#fff;opacity:.9;margin-bottom:1em}
+.heading-section .eyebrow{color:var(--sage);opacity:1}
+
+/* --- misc ------------------------------------------------------- */
+.bg-champagne{background:var(--champagne) !important}
+.contra-list{margin:0;padding:0;list-style:none;column-count:2;column-gap:2.5em}
+.contra-list li{padding:.4em 0;font-size:15px;color:#7c7369;break-inside:avoid}
+.contra-list li::before{content:"—";color:var(--sage);margin-right:.6em}
+@media(max-width:576px){.contra-list{column-count:1}}
+.faq-item h3{font-size:18px;font-weight:600;color:var(--ink);margin-bottom:.5em}
+.faq-item p{font-size:15.5px;line-height:1.85;color:#7c7369}
