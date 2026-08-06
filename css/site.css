@@ -5,20 +5,20 @@
    --------------------------------------------------------------- */
 
 :root{
-  --sage:#a3878b;
-  --sage-dark:#7c6064;
+  --sage:#000;
+  --sage-dark:#111;
   --champagne:#f5ede9;
   --taupe:#D9CDC1;
-  --ink:#383330;
+  --ink:#000;
 }
 
 /* --- navbar: brand and dropdown ------------------------------- */
-.navbar-brand{color:#000!important}
-.navbar-brand:hover,.navbar-brand:focus{color:#000!important}
-.navbar-brand h1{color:#000}
+.navbar-brand{color:#fff!important}
+.navbar-brand:hover,.navbar-brand:focus{color:#fff!important}
+.navbar-brand h1{color:#fff}
 @media (min-width:992px){
-  .ftco-navbar-light .navbar-nav .nav-link{color:#000!important}
-  .ftco-navbar-light .navbar-nav .nav-link:hover{color:var(--sage)!important}
+  .ftco-navbar-light .navbar-nav .nav-link{color:rgba(255,255,255,.88)!important}
+  .ftco-navbar-light .navbar-nav .nav-link:hover{color:#fff!important}
 }
 #ftco-navbar .dropdown-menu{
   border:0;border-radius:2px;padding:.5rem 0;margin-top:0;

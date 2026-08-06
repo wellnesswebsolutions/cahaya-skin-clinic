@@ -8862,11 +8862,11 @@ textarea.form-control {
 .ftco-discount .discount h2,
 .ftco-discount .discount h3,
 .ftco-discount .discount p{ color: #1c1c1c !important; }
-.ftco-discount .discount h3{ color: #a3878b !important; }
+.ftco-discount .discount h3{ color: #000 !important; }
 .ftco-discount .discount .btn{
   background: #1c1c1c !important; color: #fff !important; border: 2px solid #1c1c1c !important;
 }
-.ftco-discount .discount .btn:hover{ background: #a3878b !important; border-color: #a3878b !important; }
+.ftco-discount .discount .btn:hover{ background: #333 !important; border-color: #333 !important; }
 
 /* stats band also sits on a photo: darken it and force light, legible type */
 .ftco-counter .overlay{ background: rgba(20,18,16,.62) !important; }
@@ -8877,14 +8877,12 @@ textarea.form-control {
 .ftco-counter .block-18 .text strong.number{ font-size: 36px; font-weight: 700; display:block; }
 
 
-/* ── header colour ───────────────────────────────────────────────────
-   warm beige bar matching the clinic's own site (#D9CDC1).
-   past the hero it eases to a deeper beige so white type stays legible. */
+/* ── header colour ─────────────────────────────────────────────────── */
 .ftco-navbar-light,
 .ftco-navbar-light.scrolled,
 .ftco-navbar-light.scrolled.awake,
 .ftco-navbar-light.scrolled.sleep{
-  background: #D9CDC1 !important;
+  background: #000 !important;
   box-shadow: 0 1px 14px rgba(0,0,0,.08);
   transition: background-color .55s ease, box-shadow .55s ease, padding .55s ease !important;
 }
@@ -8892,21 +8890,21 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.past-hero,
 .ftco-navbar-light.scrolled.awake.past-hero,
 .ftco-navbar-light.scrolled.sleep.past-hero{
-  background: #c0b0a6 !important;
+  background: #111 !important;
   box-shadow: 0 1px 14px rgba(0,0,0,.18);
 }
 .ftco-navbar-light .navbar-brand,
 .ftco-navbar-light .nav-link{
-  color: #383330 !important;
+  color: rgba(255,255,255,.88) !important;
   transition: color .55s ease, opacity .35s ease !important;
 }
 .ftco-navbar-light .nav-link{ opacity: .85; }
 .ftco-navbar-light .nav-link:hover,
-.ftco-navbar-light .nav-item.active .nav-link{ opacity: 1; color: #383330 !important; }
+.ftco-navbar-light .nav-item.active .nav-link{ opacity: 1; color: #fff !important; }
 .ftco-navbar-light .nav-item.active .nav-link{ text-decoration: underline; text-underline-offset: 6px; }
 
 /* the template recolours the bar's type once .scrolled is on, at a higher
-   specificity than the base rule — cover every state with dark text on beige. */
+   specificity than the base rule — cover every state with white text on black. */
 .ftco-navbar-light .navbar-brand,
 .ftco-navbar-light .nav-link,
 .ftco-navbar-light .nav-link.active,
@@ -8930,10 +8928,10 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.awake.past-hero .nav-item.active > a,
 .ftco-navbar-light.scrolled.sleep.past-hero .navbar-brand,
 .ftco-navbar-light.scrolled.sleep.past-hero .nav-link{
-  color: #383330 !important;
+  color: rgba(255,255,255,.88) !important;
 }
 
-/* ── brand title always black ────────────────────────────────────────── */
+/* ── brand title always white (on black header) ───────────────────────── */
 .ftco-navbar-light .navbar-brand,
 .ftco-navbar-light.scrolled .navbar-brand,
 .ftco-navbar-light.scrolled.awake .navbar-brand,
@@ -8942,5 +8940,5 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.past-hero .navbar-brand,
 .ftco-navbar-light.scrolled.awake.past-hero .navbar-brand,
 .ftco-navbar-light.scrolled.sleep.past-hero .navbar-brand{
-  color: #000 !important;
+  color: #fff !important;
 }
