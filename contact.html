@@ -94,100 +94,89 @@
 
     <section class="ftco-section contact-section">
       <div class="container">
-        <div class="row block-9">
-          <div class="col-md-5 contact-info ftco-animate">
-            <div class="row">
-              <div class="col-md-12 mb-4">
-                <h2 class="h4">Contact &amp; booking</h2>
-                <p>Please get in touch to book an appointment or to discuss your treatment options. Our online booking system for Beverley is linked below. For Hessle, please email to arrange an appointment.</p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Phone:</span> <a href="tel:+447479686312" data-book="contact-call">07479 686312</a></p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Email:</span> <a href="mailto:info@thecahayaskinclinic.co.uk" style="word-break:break-all;">info@thecahayaskinclinic.co.uk</a></p>
-              </div>
-              <div class="col-md-12 mb-3">
-                <p><span>Instagram:</span> <a href="https://www.instagram.com/skin_slim_and_laser_solutions/" target="_blank" rel="noopener">@skin_slim_and_laser_solutions</a></p>
-              </div>
-              <div class="col-md-12 mb-4">
-                <p><span>Booking:</span> Beverley online, or enquire for Hessle</p>
-              </div>
-              <div class="col-md-12">
-                <p>
-                  <a href="https://www.fresha.com/book-now/skin-slim-laser-solutions-prs0gwgv/all-offer?share=true&amp;pId=3011819" target="_blank" rel="noopener" class="btn btn-primary py-3 px-4 mb-2" data-book="contact-primary">Book Beverley Online</a>
-                </p>
-                <p style="font-size:14.5px;color:#8a8078;">Gift vouchers are available &mdash; <a href="#enquiry">send us an enquiry</a> or call the clinic and we will sort one out for you.</p>
+        <div class="row">
+          <div class="col-md-6 mb-4 d-flex ftco-animate">
+            <div class="contact-card">
+              <h2 class="h4 mb-3">Contact &amp; booking</h2>
+              <p class="mb-4">Please get in touch to book an appointment or to discuss your treatment options. Online booking for Beverley is below. For Hessle, please email to arrange.</p>
+              <div class="contact-detail"><span>Phone</span><a href="tel:+447479686312" data-book="contact-call">07479 686312</a></div>
+              <div class="contact-detail"><span>Email</span><a href="mailto:info@thecahayaskinclinic.co.uk" style="word-break:break-all;">info@thecahayaskinclinic.co.uk</a></div>
+              <div class="contact-detail"><span>Instagram</span><a href="https://www.instagram.com/skin_slim_and_laser_solutions/" target="_blank" rel="noopener">@skin_slim_and_laser_solutions</a></div>
+              <div class="contact-detail"><span>Booking</span>Beverley online &bull; Hessle by email</div>
+              <div class="card-btn-area">
+                <a href="https://www.fresha.com/book-now/skin-slim-laser-solutions-prs0gwgv/all-offer?share=true&amp;pId=3011819" target="_blank" rel="noopener" class="btn btn-primary py-3 px-4 d-block" data-book="contact-primary">Book Beverley Online</a>
+                <p class="mt-3 mb-0" style="font-size:14px;color:#8a8078;">Gift vouchers available &mdash; <a href="#enquiry">send an enquiry</a> or call us.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-6 ftco-animate">
-            <h2 class="h4 mb-4">Send us a message</h2>
-            <form id="enquiry" class="contact-form" novalidate>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="sr-only" for="cf-name">Your name</label>
-                    <input id="cf-name" name="name" type="text" class="form-control" placeholder="Your name" required>
+          <div class="col-md-6 mb-4 d-flex ftco-animate">
+            <div class="contact-card">
+              <h2 class="h4 mb-3">Send us a message</h2>
+              <form id="enquiry" class="contact-form d-flex flex-column h-100" novalidate>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="cf-name">Your name</label>
+                      <input id="cf-name" name="name" type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="cf-email">Your email</label>
+                      <input id="cf-email" name="email" type="email" class="form-control" placeholder="Your email" required>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="sr-only" for="cf-email">Your email</label>
-                    <input id="cf-email" name="email" type="email" class="form-control" placeholder="Your email" required>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="cf-phone">Phone</label>
+                      <input id="cf-phone" name="phone" type="tel" class="form-control" placeholder="Phone (optional)">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="sr-only" for="cf-clinic">Preferred clinic</label>
+                      <select id="cf-clinic" name="clinic" class="form-control" required>
+                        <option value="">Preferred clinic</option>
+                        <option>Beverley</option>
+                        <option>Hessle</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="sr-only" for="cf-phone">Phone</label>
-                    <input id="cf-phone" name="phone" type="tel" class="form-control" placeholder="Phone (optional)">
-                  </div>
+                <div class="form-group">
+                  <label class="sr-only" for="cf-service">What are you interested in?</label>
+                  <select id="cf-service" name="service" class="form-control" required>
+                    <option value="">What are you interested in?</option>
+                    <option>Skin consultation</option>
+                    <option>Facials</option>
+                    <option>Chemical peels</option>
+                    <option>Advanced skin treatments / microneedling</option>
+                    <option>Non-surgical lifting / CACI</option>
+                    <option>Aesthetic treatments</option>
+                    <option>Laser hair removal</option>
+                    <option>Fat loss / non-surgical liposuction</option>
+                    <option>Body &amp; wellness treatments</option>
+                    <option>Skin health packages</option>
+                    <option>Gift voucher</option>
+                    <option>Something else</option>
+                  </select>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="sr-only" for="cf-clinic">Preferred clinic</label>
-                    <select id="cf-clinic" name="clinic" class="form-control" required>
-                      <option value="">Preferred clinic</option>
-                      <option>Beverley</option>
-                      <option>Hessle</option>
-                    </select>
-                  </div>
+                <div class="form-group flex-grow-1 d-flex flex-column">
+                  <label class="sr-only" for="cf-msg">Message</label>
+                  <textarea id="cf-msg" name="message" cols="30" rows="5" class="form-control flex-grow-1" placeholder="Tell us about your skin or your goal, and which days suit you best&hellip;" required></textarea>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="cf-service">What are you interested in?</label>
-                <select id="cf-service" name="service" class="form-control" required>
-                  <option value="">What are you interested in?</option>
-                  <option>Skin consultation</option>
-                  <option>Facials</option>
-                  <option>Chemical peels</option>
-                  <option>Advanced skin treatments / microneedling</option>
-                  <option>Non-surgical lifting / CACI</option>
-                  <option>Aesthetic treatments</option>
-                  <option>Laser hair removal</option>
-                  <option>Fat loss / non-surgical liposuction</option>
-                  <option>Body &amp; wellness treatments</option>
-                  <option>Skin health packages</option>
-                  <option>Gift voucher</option>
-                  <option>Something else</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="cf-msg">Message</label>
-                <textarea id="cf-msg" name="message" cols="30" rows="6" class="form-control" placeholder="Tell us about your skin or your goal, and which days suit you best&hellip;" required></textarea>
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="cf-consent" name="consent" required>
-                <label class="form-check-label" for="cf-consent" style="font-size:14px;color:#8a8078;">I have read the <a href="privacy-policy.html">privacy policy</a> and understand the information provided will be used in accordance with it.</label>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send message" class="btn btn-primary py-3 px-5">
-              </div>
-              <p id="cf-status" role="status" aria-live="polite" class="mt-3 mb-0" style="display:none;font-size:15px;"></p>
-            </form>
+                <div class="form-group form-check mt-2">
+                  <input type="checkbox" class="form-check-input" id="cf-consent" name="consent" required>
+                  <label class="form-check-label" for="cf-consent" style="font-size:14px;color:#8a8078;">I have read the <a href="privacy-policy.html">privacy policy</a> and consent to my data being used accordingly.</label>
+                </div>
+                <div class="card-btn-area">
+                  <input type="submit" value="Send message" class="btn btn-primary py-3 px-5 d-block w-100">
+                </div>
+                <p id="cf-status" role="status" aria-live="polite" class="mt-3 mb-0" style="display:none;font-size:15px;"></p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
