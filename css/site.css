@@ -86,6 +86,19 @@
 .tcard .tcard-more{display:inline-block;margin-top:.9em;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#fff;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:2px}
 .tcard:hover .tcard-more{border-bottom-color:#fff}
 
+/* --- text-only treatment cards --------------------------------- */
+.txt-card{
+  display:flex;flex-direction:column;width:100%;
+  padding:2em 2.1em;border:1px solid #e8e2da;border-radius:3px;
+  background:#fff;text-decoration:none;color:var(--ink);
+  transition:border-color .25s,box-shadow .25s;
+}
+.txt-card:hover{border-color:#000;box-shadow:0 4px 18px rgba(0,0,0,.08);color:var(--ink);text-decoration:none;}
+.txt-card h3{font-size:17px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:0 0 .6em;color:var(--ink)}
+.txt-card p{font-size:15px;line-height:1.75;color:#7c7369;margin:0;flex:1}
+.txt-card-arrow{margin-top:1.2em;font-size:18px;color:#000;transition:transform .2s}
+.txt-card:hover .txt-card-arrow{transform:translateX(4px)}
+
 /* --- gallery ---------------------------------------------------- */
 .ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
 .ba-tile{position:relative;overflow:hidden;border-radius:3px;background:#f3efe9}
