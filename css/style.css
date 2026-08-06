@@ -8932,3 +8932,15 @@ textarea.form-control {
 .ftco-navbar-light.scrolled.sleep.past-hero .nav-link{
   color: #383330 !important;
 }
+
+/* ── brand title always black ────────────────────────────────────────── */
+.ftco-navbar-light .navbar-brand,
+.ftco-navbar-light.scrolled .navbar-brand,
+.ftco-navbar-light.scrolled.awake .navbar-brand,
+.ftco-navbar-light.scrolled.sleep .navbar-brand,
+.ftco-navbar-light.past-hero .navbar-brand,
+.ftco-navbar-light.scrolled.past-hero .navbar-brand,
+.ftco-navbar-light.scrolled.awake.past-hero .navbar-brand,
+.ftco-navbar-light.scrolled.sleep.past-hero .navbar-brand{
+  color: #000 !important;
+}
