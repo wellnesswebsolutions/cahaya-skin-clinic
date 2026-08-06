@@ -12,6 +12,10 @@
   --ink:#000;
 }
 
+/* --- gap below fixed header ------------------------------------ */
+#ftco-navbar + section{padding-top:11em}
+@media(max-width:767.98px){#ftco-navbar + section{padding-top:9em}}
+
 /* --- navbar: brand and dropdown ------------------------------- */
 .navbar-brand{color:#000!important}
 .navbar-brand:hover,.navbar-brand:focus{color:#000!important}
