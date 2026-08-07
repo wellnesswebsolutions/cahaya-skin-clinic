@@ -12,6 +12,12 @@
   --ink:#000;
 }
 
+/* --- global text darkening ------------------------------------- */
+body{color:#2e2a27;}
+p{color:#3d3330;}
+.eyebrow{font-weight:700;letter-spacing:.22em;}
+small,caption,.small{color:#4e4540!important;font-weight:600;}
+
 /* --- gap below fixed header ------------------------------------ */
 /* inner pages: first section after nav */
 #ftco-navbar + section{padding-top:11em}
@@ -69,7 +75,7 @@
 .price-item:first-child{border-top:1px solid #e8e2da}
 .price-item .price-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.4em}
 .price-item h3{font-size:19px;font-weight:600;margin:0;letter-spacing:.02em;color:var(--ink)}
-.price-item .price-sub{display:block;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:#9b9188;font-weight:600;margin-top:.25em}
+.price-item .price-sub{display:block;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:#6a5f58;font-weight:600;margin-top:.25em}
 .price-item .price-tag{font-size:16px;font-weight:700;color:var(--sage);white-space:nowrap}
 .price-item p{margin:.85em 0 0;font-size:15.5px;line-height:1.8;color:#4e4842}
 .price-item p:last-child{margin-bottom:0}
@@ -140,7 +146,7 @@
 .home-stat{padding:1.6em 2em;border:1px solid #e8e2da;border-radius:8px;background:#fff;transition:box-shadow .25s,transform .25s;}
 .home-stat:hover{box-shadow:0 6px 24px rgba(0,0,0,.08);transform:translateY(-2px);}
 .home-stat strong{display:block;font-size:2.2rem;font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1;}
-.home-stat span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:#9b9188;margin-top:.5em;}
+.home-stat span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:#6a5f58;margin-top:.5em;}
 @media(max-width:767.98px){
   .home-stats{grid-template-columns:repeat(2,1fr);}
 }
