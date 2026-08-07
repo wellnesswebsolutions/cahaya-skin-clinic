@@ -131,19 +131,19 @@
       <div class="container">
         <div class="home-stats ftco-animate">
           <div class="home-stat">
-            <strong>2</strong>
+            <strong class="stat-num" data-target="2" data-suffix="">2</strong>
             <span>Clinics in East Yorkshire</span>
           </div>
           <div class="home-stat">
-            <strong>40%</strong>
+            <strong class="stat-num" data-target="40" data-suffix="%">40%</strong>
             <span>Up to fat loss per treated area</span>
           </div>
           <div class="home-stat">
-            <strong>32</strong>
+            <strong class="stat-num" data-target="32" data-suffix="">32</strong>
             <span>Facial muscles worked in a CACI lift</span>
           </div>
           <div class="home-stat">
-            <strong>6</strong>
+            <strong class="stat-num" data-target="6" data-suffix="">6</strong>
             <span>Treatments in every skin health package</span>
           </div>
         </div>
@@ -280,5 +280,33 @@
   <script src="js/main.js"></script>
   <script src="js/header-tone.js"></script>
   <script src="js/booking.js"></script>
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.stat-num');
+      if(!els.length) return;
+      var done = false;
+      function countUp(){
+        if(done) return;
+        done = true;
+        els.forEach(function(el){
+          var target = +el.dataset.target;
+          var suffix = el.dataset.suffix || '';
+          var duration = 1400;
+          var start = performance.now();
+          function step(now){
+            var p = Math.min((now - start) / duration, 1);
+            var ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(ease * target) + suffix;
+            if(p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        });
+      }
+      var observer = new IntersectionObserver(function(entries){
+        if(entries[0].isIntersecting) countUp();
+      }, {threshold: 0.4});
+      observer.observe(document.querySelector('.home-stats'));
+    })();
+  </script>
 </body>
 </html>

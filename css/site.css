@@ -20,6 +20,10 @@ small,caption,.small{color:#4e4540!important;font-weight:600;}
 /* eyebrow inside cards and sections (not hero) must be black */
 .contact-card .eyebrow,.ftco-section .eyebrow{color:#000!important;opacity:1;}
 
+/* --- tighten section gaps sitewide ----------------------------- */
+.ftco-section{padding:4em 0!important;}
+@media(max-width:767.98px){.ftco-section{padding:3em 0!important;}}
+
 /* --- gap below fixed header ------------------------------------ */
 /* inner pages: first section after nav */
 #ftco-navbar + section{padding-top:11em}
