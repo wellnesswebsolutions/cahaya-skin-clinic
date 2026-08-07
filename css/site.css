@@ -70,7 +70,7 @@
 .price-item h3{font-size:19px;font-weight:600;margin:0;letter-spacing:.02em;color:var(--ink)}
 .price-item .price-sub{display:block;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:#9b9188;font-weight:600;margin-top:.25em}
 .price-item .price-tag{font-size:16px;font-weight:700;color:var(--sage);white-space:nowrap}
-.price-item p{margin:.85em 0 0;font-size:15.5px;line-height:1.8;color:#7c7369}
+.price-item p{margin:.85em 0 0;font-size:15.5px;line-height:1.8;color:#4e4842}
 .price-item p:last-child{margin-bottom:0}
 
 /* --- compact two-column price table (laser) --------------------- */
@@ -78,7 +78,7 @@
 .rate-card h3{font-size:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink);margin-bottom:.35em}
 .rate-card .rate-note{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:1.4em;display:block}
 .rate-card ul{margin:0;padding:0;list-style:none}
-.rate-card li{display:flex;justify-content:space-between;gap:1em;padding:.55em 0;border-bottom:1px solid #f0ece6;font-size:15.5px;color:#7c7369}
+.rate-card li{display:flex;justify-content:space-between;gap:1em;padding:.55em 0;border-bottom:1px solid #f0ece6;font-size:15.5px;color:#4e4842}
 .rate-card li:last-child{border-bottom:0}
 .rate-card li strong{color:var(--ink);font-weight:600;white-space:nowrap}
 
@@ -116,7 +116,7 @@
 }
 .txt-card:hover{border-color:#000;box-shadow:0 4px 18px rgba(0,0,0,.08);color:var(--ink);text-decoration:none;}
 .txt-card h3{font-size:17px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:0 0 .6em;color:var(--ink)}
-.txt-card p{font-size:15px;line-height:1.75;color:#7c7369;margin:0;flex:1}
+.txt-card p{font-size:15px;line-height:1.75;color:#4e4842;margin:0;flex:1}
 .txt-card-arrow{margin-top:1.2em;font-size:18px;color:#000;transition:transform .2s}
 .txt-card:hover .txt-card-arrow{transform:translateX(4px)}
 
@@ -125,13 +125,13 @@
 .ba-tile{position:relative;overflow:hidden;border-radius:3px;background:#f3efe9}
 .ba-tile img{width:100%;display:block;transition:transform .9s}
 .ba-tile:hover img{transform:scale(1.04)}
-.ba-tile figcaption{padding:1.1em 1.3em;font-size:14px;color:#7c7369;background:#fff;border:1px solid #efe9e2;border-top:0}
+.ba-tile figcaption{padding:1.1em 1.3em;font-size:14px;color:#4e4842;background:#fff;border:1px solid #efe9e2;border-top:0}
 
 /* --- location cards --------------------------------------------- */
 .loc-card{background:#fff;border:1px solid #e8e2da;border-radius:3px;padding:2.1em;height:100%}
 .loc-card .loc-pin{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--champagne);color:var(--sage);margin-bottom:1em}
 .loc-card h3{font-size:17px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;margin-bottom:.6em;color:var(--ink)}
-.loc-card address{font-style:normal;font-size:15.5px;line-height:1.85;color:#7c7369;margin-bottom:.9em}
+.loc-card address{font-style:normal;font-size:15.5px;line-height:1.85;color:#4e4842;margin-bottom:.9em}
 .loc-card .loc-tag{display:inline-block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--sage);background:var(--champagne);padding:.42em .9em;border-radius:2px}
 
 /* --- home stats strip ------------------------------------------ */
@@ -153,7 +153,7 @@
 .contact-card .h4{font-size:19px;font-weight:700;color:var(--ink)}
 .contact-detail{
   display:flex;gap:1em;align-items:baseline;
-  padding:.6em 0;border-bottom:1px solid #f0ece6;font-size:15px;color:#7c7369;
+  padding:.6em 0;border-bottom:1px solid #f0ece6;font-size:15px;color:#4e4842;
 }
 .contact-detail:last-of-type{border-bottom:0}
 .contact-detail span{
@@ -191,8 +191,8 @@
 /* --- misc ------------------------------------------------------- */
 .bg-champagne{background:var(--champagne) !important}
 .contra-list{margin:0;padding:0;list-style:none;column-count:2;column-gap:2.5em}
-.contra-list li{padding:.4em 0;font-size:15px;color:#7c7369;break-inside:avoid}
+.contra-list li{padding:.4em 0;font-size:15px;color:#4e4842;break-inside:avoid}
 .contra-list li::before{content:"—";color:var(--sage);margin-right:.6em}
 @media(max-width:576px){.contra-list{column-count:1}}
 .faq-item h3{font-size:18px;font-weight:600;color:var(--ink);margin-bottom:.5em}
-.faq-item p{font-size:15.5px;line-height:1.85;color:#7c7369}
+.faq-item p{font-size:15.5px;line-height:1.85;color:#4e4842}
