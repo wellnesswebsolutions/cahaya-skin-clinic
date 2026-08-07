@@ -134,6 +134,17 @@
 .loc-card address{font-style:normal;font-size:15.5px;line-height:1.85;color:#7c7369;margin-bottom:.9em}
 .loc-card .loc-tag{display:inline-block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--sage);background:var(--champagne);padding:.42em .9em;border-radius:2px}
 
+/* --- home stats strip ------------------------------------------ */
+.home-stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #e8e2da;border-top:0;border-bottom:0;background:#fff;}
+.home-stat{padding:1.6em 2em;border-bottom:1px solid #e8e2da;border-right:1px solid #e8e2da;}
+.home-stat:last-child{border-right:0;}
+.home-stat strong{display:block;font-size:2.2rem;font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1;}
+.home-stat span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:#9b9188;margin-top:.5em;}
+@media(max-width:767.98px){
+  .home-stats{grid-template-columns:repeat(2,1fr);}
+  .home-stat:nth-child(2){border-right:0;}
+}
+
 /* --- contact cards --------------------------------------------- */
 .contact-card{
   display:flex;flex-direction:column;width:100%;
