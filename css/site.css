@@ -17,6 +17,8 @@ body{color:#2e2a27;}
 p{color:#3d3330;}
 .eyebrow{font-weight:700;letter-spacing:.22em;}
 small,caption,.small{color:#4e4540!important;font-weight:600;}
+/* eyebrow inside cards and sections (not hero) must be black */
+.contact-card .eyebrow,.ftco-section .eyebrow{color:#000!important;opacity:1;}
 
 /* --- gap below fixed header ------------------------------------ */
 /* inner pages: first section after nav */
