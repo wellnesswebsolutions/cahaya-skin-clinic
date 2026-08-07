@@ -20,7 +20,7 @@
 .hero-wrap .slider-text{padding-top:90px}
 
 /* --- navbar: brand and dropdown ------------------------------- */
-.nav-logo{height:62px;width:auto;display:block;mix-blend-mode:multiply;}
+.nav-logo{height:52px;width:auto;display:inline-block;vertical-align:middle;mix-blend-mode:multiply;margin-right:.5em;}
 .navbar-brand{color:#000!important}
 .navbar-brand:hover,.navbar-brand:focus{color:#000!important}
 .navbar-brand h1{color:#000}
@@ -123,8 +123,8 @@
 
 /* --- gallery ---------------------------------------------------- */
 .ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.ba-tile{position:relative;overflow:hidden;border-radius:3px;background:#f3efe9}
-.ba-tile img{width:100%;display:block;transition:transform .9s}
+.ba-tile{position:relative;overflow:hidden;border-radius:3px;background:#f3efe9;aspect-ratio:1;}
+.ba-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s}
 .ba-tile:hover img{transform:scale(1.04)}
 .ba-tile figcaption{padding:1.1em 1.3em;font-size:14px;color:#4e4842;background:#fff;border:1px solid #efe9e2;border-top:0}
 
@@ -149,7 +149,7 @@
 /* --- contact cards --------------------------------------------- */
 .contact-card{
   display:flex;flex-direction:column;width:100%;
-  border:1px solid #e8e2da;border-radius:3px;padding:2.4em 2.5em;background:#fff;
+  border:1px solid #e8e2da;border-radius:3px;padding:2.4em 2.5em;background:var(--champagne);
 }
 .contact-card .h4{font-size:19px;font-weight:700;color:var(--ink)}
 .contact-detail{
@@ -185,7 +185,7 @@
 .hero-wrap:not(.hero-compact) .slider-text h1{color:#fff!important}
 
 /* --- brand mark in hero ----------------------------------------- */
-.hero-logo{max-width:140px;width:36vw;height:auto;margin:0 auto 1.6em;display:block;}
+.hero-logo{max-width:110px;width:28vw;height:auto;margin:0 auto 1.6em;display:block;border-radius:3px;}
 .eyebrow{display:block;font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;font-weight:600;color:#fff;opacity:.9;margin-bottom:1em}
 .heading-section .eyebrow{color:var(--sage);opacity:1}
 
