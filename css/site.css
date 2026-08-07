@@ -233,7 +233,4 @@ small,caption,.small{color:#4e4540!important;font-weight:600;}
 .ftco-navbar-light .navbar-nav .nav-link:hover::after,
 .ftco-navbar-light .navbar-nav .nav-item.active .nav-link::after{transform:scaleX(1);}
 
-/* Section headings fade up (for browsers that support IntersectionObserver natively via CSS) */
-.ftco-section .heading-section{animation:fadeUp .7s ease both;}
-.ftco-section .contact-card{animation:fadeUp .6s ease both;}
 
