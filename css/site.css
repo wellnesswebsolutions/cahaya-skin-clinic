@@ -205,6 +205,11 @@ small,caption,.small{color:#4e4540!important;font-weight:600;}
 .faq-item h3{font-size:18px;font-weight:600;color:var(--ink);margin-bottom:.5em}
 .faq-item p{font-size:15.5px;line-height:1.85;color:#4e4842}
 
+/* --- form checkbox alignment ----------------------------------- */
+.form-check{display:flex;align-items:flex-start;gap:.65em;padding-left:0;}
+.form-check-input{flex:0 0 auto;margin-top:.22em;margin-left:0;}
+.form-check-label{flex:1;}
+
 /* --- animations ------------------------------------------------- */
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
